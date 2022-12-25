@@ -9,7 +9,7 @@
         if(isset($config->background_image) && $config->background_image !== '')
         {
         $bg = true;
-        $url = Storage::url($config->background_image);
+        $url = Storage::url('public/'$config->background_image);
         }
         @endphp
         <section data-id="home" class="animated-section start-page">
