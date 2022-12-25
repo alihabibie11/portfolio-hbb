@@ -9,11 +9,11 @@
         if(isset($config->background_image) && $config->background_image !== '')
         {
         $bg = true;
-        $url = Storage::url('public/'.$config->background_image);
+        $url = Storage::url($config->background_image);
         }
         @endphp
         <section data-id="home" class="animated-section start-page">
-            <div class="section-content vcentered" {!! $bg==true ? 'style="background-image: url(' .$url.');
+            <div class="section-content vcentered" {!! $bg==true ? 'style="background-image: url(storage/' .$url.');
                 background-repeat: no-repeat; background-position: center; background-size: cover;"' : '' !!}>
 
                 <div class="row">
