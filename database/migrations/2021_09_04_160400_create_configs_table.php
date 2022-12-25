@@ -15,22 +15,22 @@ class CreateConfigsTable extends Migration
     {
         Schema::create('configs', function (Blueprint $table) {
             $table->id();
-            $table->string('nameweb');
-            $table->string('about');
-            $table->string('logo');
-            $table->string('icon');
-            $table->text('background_image');
-            $table->text('keywords');
-            $table->text('description');
-            $table->string('email');
-            $table->string('phone');
-            $table->text('address');
-            $table->string('facebook');
-            $table->string('instagram');
-            $table->string('twitter');
-            $table->string('linkedin');
-            $table->string('github');
-            $table->text('google_maps');
+            $table->string('nameweb')->nullable();
+            $table->string('about')->nullable();
+            $table->string('logo')->nullable();
+            $table->string('icon')->nullable();
+            $table->text('background_image')->nullable();
+            $table->text('keywords')->nullable();
+            $table->text('description')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
+            $table->string('github')->nullable();
+            $table->text('google_maps')->nullable();
             $table->timestamps();
         });
     }
