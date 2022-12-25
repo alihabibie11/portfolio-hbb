@@ -15,8 +15,7 @@ class CategoriesPortfolio extends Seeder
     public function run()
     {
         DB::table('categories_portfolios')->insert([
-            'title' => '',
-            'created_at' => ' '
+            'title' => 'Website',
         ]);
     }
 }
