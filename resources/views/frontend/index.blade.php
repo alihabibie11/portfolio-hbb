@@ -13,7 +13,7 @@
         }
         @endphp
         <section data-id="home" class="animated-section start-page">
-            <div class="section-content vcentered" {!! $bg==true ? 'style="background-image: url(storage/' .$url.');
+            <div class="section-content vcentered" {!! $bg==true ? 'style="background-image: url(public' .$url.');
                 background-repeat: no-repeat; background-position: center; background-size: cover;"' : '' !!}>
 
                 <div class="row">
